@@ -9,7 +9,7 @@ Example:
 external_components:
   source:
     type: git
-    url: https://github.com/
+    url: https://github.com/AGalfra/noblex.git
     
 climate:
   - platform: noblex
