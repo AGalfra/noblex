@@ -5,6 +5,7 @@ This adds a new climate component to the ESPHome ecosystem, providing compatibil
 In your ESP device configuration add something like this to your *.yaml.
 Example:
 
+```yaml
 external_components:
   source:
     type: git
@@ -16,3 +17,4 @@ climate:
     id: prueba_ac
     sensor: temp
     receiver_id: rcvr
+```
