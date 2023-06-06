@@ -17,6 +17,22 @@ climate:
     id: prueba_ac
     sensor: temp
     receiver_id: rcvr
+    
+remote_receiver:
+  id: rcvr
+  pin:
+    number: GPIO14
+    inverted: True
+    mode: OUTPUT_OPEN_DRAIN
+  tolerance: 45%
+
+remote_transmitter:
+  - id: receiver_hack
+    carrier_duty_percent: 100%
+    pin:
+      number: GPIO14
+      inverted: true
+      mode: OUTPUT_OPEN_DRAIN      
 ```
 ##########################################################################################################
 ## IR transmission protocol details
